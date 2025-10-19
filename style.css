@@ -136,6 +136,8 @@ nav ul li {
     height: 302px;
     background-color: #F1F1F1;
     border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 .card-conteudo {
@@ -162,4 +164,65 @@ nav ul li {
 .card p {
     font-size: 1rem;
     color: #424242;
+}
+
+.funcionalidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.funcionalidades-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.funcionalidades-texto h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #160B05;
+}
+
+.funcionalidades-span{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#span-1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #160B05;
+    position: relative;
+}
+
+#span-1::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 10px;
+    background-color: #160B05;
+    top: -8px;
+    left: 0;
+}
+
+#span-2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #424242;
+}
+
+.funcionalidades-texto p {
+    text-align: flex-start;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #424242;
+}
+
+.funcionalidades-texto img {
+    width: 558px;
+    height: 558px;
 }
