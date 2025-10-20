@@ -13,14 +13,18 @@
     padding-left: 300px;
 }
 
-nav ul li {
+nav ul li{
+    position: relative;
+}
+
+nav ul li a{
+    color: #000000;
     font-size: 1.25rem;
     font-weight: 500;
-    position: relative;
     cursor: pointer;
 }
 
-nav ul li::after {
+nav ul li a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -33,7 +37,7 @@ nav ul li::after {
     transform-origin: center; 
 }
 
-nav ul li:hover::after {
+nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
@@ -252,6 +256,18 @@ nav ul li:hover::after {
 .funcionalidades-texto img {
     width: 558px;
     height: 558px;
+}
+
+.parceiros h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #160B05;
+}
+
+.parceiros p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #424242;
 }
 
 .footer-container {

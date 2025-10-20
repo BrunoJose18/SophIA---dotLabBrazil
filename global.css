@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   box-sizing: border-box;
   max-width: 1200px;
