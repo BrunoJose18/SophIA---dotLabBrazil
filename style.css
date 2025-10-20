@@ -16,6 +16,25 @@
 nav ul li {
     font-size: 1.25rem;
     font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #160B05;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: center; 
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
 }
 
 .hero1 {
@@ -209,10 +228,18 @@ nav ul li {
     left: 0;
 }
 
+#span-1:hover {
+    cursor: pointer;
+}
+
 #span-2 {
     font-size: 1.5rem;
     font-weight: 500;
     color: #424242;
+}
+
+#span-2 {
+    cursor: pointer;
 }
 
 .funcionalidades-texto p {
@@ -225,4 +252,36 @@ nav ul li {
 .funcionalidades-texto img {
     width: 558px;
     height: 558px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 550px;
+    background-color: #160B05;
+}
+
+.footer-container span {
+    display: flex;
+    padding-top: 90px;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+
+.footer-listas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-listas h3 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.footer-listas ul li {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 7px;
+    cursor: pointer;
 }
