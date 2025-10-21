@@ -52,6 +52,7 @@ nav ul li a:hover::after {
 .hero1-texto {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .hero1-texto h2 {
@@ -106,7 +107,7 @@ nav ul li a:hover::after {
 .sobre-texto {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 45px;
 }
 
 .sobre h2 {
@@ -130,19 +131,25 @@ nav ul li a:hover::after {
     background-color: #160B05;
 }
 
-.objetivo-conteudo > h1 {
+.objetivo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.objetivo-texto > h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #FFFFFF;
     padding-top: 100px;
 }
 
-.objetivo p {
+.objetivo-texto p {
     font-size: 1.5rem;
     color: #FFFFFF;
 }
 
-.objetivo p bold{
+.objetivo-texto p bold{
     font-weight: 700;
     color: #FFFFFF;
 }
@@ -200,7 +207,7 @@ nav ul li a:hover::after {
 .funcionalidades-texto {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 .funcionalidades-texto h1{
@@ -258,6 +265,13 @@ nav ul li a:hover::after {
     height: 558px;
 }
 
+.parceiros {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+
 .parceiros h1{
     font-size: 2.5rem;
     font-weight: 700;
@@ -270,9 +284,18 @@ nav ul li a:hover::after {
     color: #424242;
 }
 
+.parceiros_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0 159px 0;
+    gap: 34px;
+}
+
 .footer-container {
     width: 100%;
-    height: 550px;
+    height: 100%;
     background-color: #160B05;
 }
 
@@ -294,10 +317,32 @@ nav ul li a:hover::after {
     font-weight: 700;
 }
 
-.footer-listas ul li {
+.footer-listas ul li a{
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: 500;
     margin-top: 7px;
+}
+
+.footer-listas ul li a:hover {
     cursor: pointer;
+}
+
+.footer-img {
+    padding: 160px 0 50px 0;
+}
+
+.footer-colunas {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-colunas ul li {
+    display: flex;
+    margin: 7px 0
+}
+
+.contatos ul li a {
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
