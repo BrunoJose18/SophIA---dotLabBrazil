@@ -129,6 +129,7 @@ nav ul li a:hover::after {
 .objetivo {
     height: 830px;
     background-color: #160B05;
+    margin-top: 125px;
 }
 
 .objetivo-texto {
@@ -206,6 +207,7 @@ nav ul li a:hover::after {
 
 .funcionalidades-texto {
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 40px;
 }
@@ -222,14 +224,26 @@ nav ul li a:hover::after {
     gap: 30px;
 }
 
-#span-1 {
+.funcionalidades-span span {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #160B05;
     position: relative;
 }
 
-#span-1::before {
+.funcionalidades-span span:hover {
+    cursor: pointer;
+}
+
+.funcionalidades-span .trigger:not(.ativo) {
+    font-weight: 500;
+    color: #424242;
+}
+
+.funcionalidades-span .trigger.ativo {
+    font-weight: 700;
+    color: #160B05;
+}
+
+.funcionalidades-span .trigger::before {
     content: "";
     position: absolute;
     width: 31px;
@@ -237,20 +251,27 @@ nav ul li a:hover::after {
     background-color: #160B05;
     top: -8px;
     left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: left;
 }
 
-#span-1:hover {
-    cursor: pointer;
+.funcionalidades-span .trigger.ativo::before {
+    transform: scaleX(1);
 }
 
-#span-2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #424242;
+.funcionalidades-conteudo {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0s ease, transform 0.9s ease;
 }
 
-#span-2 {
-    cursor: pointer;
+.funcionalidades-conteudo.ativo {
+  transform: translateY(0);
+  opacity: 1;
+  position: relative;
 }
 
 .funcionalidades-texto p {
@@ -301,7 +322,7 @@ nav ul li a:hover::after {
 
 .footer-container span {
     display: flex;
-    padding-top: 90px;
+    padding: 90px 0 93px 0;
     font-size: 1.25rem;
     color: #FFFFFF;
 }

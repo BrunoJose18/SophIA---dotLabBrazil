@@ -142,12 +142,16 @@
             <h1>Principais funcionalidades do sophIA</h1>
             
             <div class="funcionalidades-span">
-                <span id="span-1">Predição inteligente</span>
-                <span id="span-2">Dashboards interativos</span>
+                <span class="trigger" data-target="conteudo-predicao">Predição inteligente</span>
+                <span class="trigger" data-target="conteudo-dashboard">Dashboards interativos</span>
             </div>
 
-            <p>
+            <p id="conteudo-predicao" class="funcionalidades-conteudo">
                 Com base em dados reais do CISAM, o sophIA utiliza modelos de inteligência artificial para predizer desfechos clínicos adversos em neonatos, como sepse, displasia broncopulmonar, hipertensão pulmonar e morte neonatal, entre outros.
+            </p>
+
+            <p id="conteudo-dashboard" class="funcionalidades-conteudo">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, vitae. Suscipit architecto eligendi tenetur culpa reprehenderit harum doloribus quaerat nostrum quibusdam, porro distinctio praesentium consequatur aspernatur ipsam dolore rerum minima?
             </p>
 
         </div>
@@ -184,8 +188,17 @@
                     <div class="footer-colunas contatos">
                         <h3>Contatos</h3>
                         <ul>
-                            <li><img src="img/instagram.svg" alt=""><a href="">@dot.sophia</a></li>
-                            <li><img src="img/email.svg" alt=""><a href="">sophia@contato.com</a></li>
+                            <li>
+                                <img src="img/instagram.svg" alt="">
+                                <a href="https://www.instagram.com/dot.sophia/" target="_blank">@dot.sophia</a>
+                            </li>
+                            <li>
+                                <img src="img/email.svg" alt="">
+                                <a 
+                                href="mailto:sophia@contato.com?subject=Contato%20pelo%20site%20da%20SophIA&body=Olá,%20eu%20gostaria%20de%20mais%20informações%20sobre%20o%20projeto.">
+                                    sophia@contato.com
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -205,5 +218,7 @@
             <span>&copy; 2024 SophIA. Todos os direitos reservados.</span>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
