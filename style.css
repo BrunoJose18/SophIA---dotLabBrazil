@@ -1,3 +1,7 @@
+* h1 {
+    line-height: 3.3rem;
+}
+
 .navegacao{
     display: flex;
     flex-direction: row;
@@ -90,6 +94,10 @@ nav ul li a:hover::after {
     font-weight: 500;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.hero1-texto button:hover {
+    background: #424242;
 }
 
 .hero1-img {
@@ -347,6 +355,7 @@ nav ul li a:hover::after {
 
 .footer-listas ul li a:hover {
     cursor: pointer;
+    color: #424242;
 }
 
 .footer-img {
@@ -366,4 +375,81 @@ nav ul li a:hover::after {
 .contatos ul li a {
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding-left: 100px;
+    }
+
+    .hero1 {
+        flex-direction: column;
+    }
+
+    .hero1-texto {
+        margin-top: 20px;
+    }
+
+    .hero1-texto h1 {
+        font-size: 2rem;
+    }
+
+    .hero1-texto p {
+    font-size: 1.3rem;
+    }
+
+    .hero1-texto p bold{
+    font-size: 1.3rem;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre h2 {
+        font-size: 2rem;
+    }
+
+    .sobre p, bold {
+        font-size: 1.3rem;
+    }
+
+    .objetivo {
+        height: 1130px;
+        padding-bottom: 50px;
+    }
+
+    .objetivo-texto > h1 {
+        font-size: 2rem;
+    }
+
+    .objetivo-texto p, bold {
+        font-size: 1.3rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .funcionalidades {
+        flex-direction: column;
+    }
+
+    .funcionalidades-texto h1 {
+        font-size: 2rem;
+    }
+
+    .funcionalidades-texto span, p {
+        font-size: 1.3rem;
+    }
+
+    .parceiros h1 {
+        font-size: 2rem;
+    }
+
+    .parceiros p {
+        font-size: 1.3rem;
+    }
 }
