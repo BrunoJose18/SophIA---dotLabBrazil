@@ -9,7 +9,11 @@
 </head>
 <body>
     <header class="container navegacao" id="inicio">
-        <img src="img/LogoSophIA.png" alt="">
+        <a href="#inicio"><img src="img/LogoSophIA.png" alt=""></a>
+
+        <button class="menu-button" aria-label="Menu" aria-expanded="false">
+            <span></span>
+        </button>
 
         <nav>
             <ul class="navbar">
@@ -39,8 +43,17 @@
                     <div class="footer-colunas contatos">
                         <h3>Contatos</h3>
                         <ul>
-                            <li><img src="img/instagram.svg" alt=""><a href="">@dot.sophia</a></li>
-                            <li><img src="img/email.svg" alt=""><a href="">sophia@contato.com</a></li>
+                            <li>
+                                <img src="img/instagram.svg" alt="">
+                                <a href="https://www.instagram.com/dot.sophia/" target="_blank">@dot.sophia</a>
+                            </li>
+                            <li>
+                                <img src="img/email.svg" alt="">
+                                <a 
+                                href="mailto:sophia@contato.com?subject=Contato%20pelo%20site%20da%20SophIA&body=Olá,%20eu%20gostaria%20de%20mais%20informações%20sobre%20o%20projeto.">
+                                    sophia@contato.com
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -60,5 +73,7 @@
             <span>&copy; 2024 SophIA. Todos os direitos reservados.</span>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

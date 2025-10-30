@@ -6,11 +6,16 @@
     <title>SophIA</title>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
 </head>
 
 <body>
     <header class="container navegacao" id="inicio">
-        <img src="img/LogoSophIA.png" alt="">
+        <a href="#inicio"><img src="img/LogoSophIA.png" alt=""></a>
+
+        <button class="menu-button" aria-label="Menu" aria-expanded="false">
+            <span></span>
+        </button>
 
         <nav>
             <ul class="navbar">
@@ -84,32 +89,40 @@
 
                 <div class="card">
                     <div class="card-conteudo">
-                        <img src="img/peca.svg" alt="">
-                        <h1>Plataforma Integrada</h1>
+                         <div class="header-card">
+                           <img src="img/peca.svg" alt="">
+                            <h1>Plataforma Integrada</h1> 
+                         </div>
                         <p>Desenvolver uma plataforma integrada ao sistema do CISAM.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-conteudo">
-                        <img src="img/robo.svg" alt="">
-                        <h1>Predição Inteligente</h1>
+                         <div class="header-card">
+                            <img src="img/robo.svg" alt="">
+                            <h1>Predição Inteligente</h1>
+                         </div>
                         <p>Aplicar modelos de IA capazes de prever doenças e condições em recém-nascidos.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-conteudo">
-                        <img src="img/relogio.svg" alt="">
-                        <h1>Intervenção Precoce</h1>
+                        <div class="header-card">
+                            <img src="img/relogio.svg" alt="">
+                            <h1>Intervenção Precoce</h1>   
+                        </div>
                         <p>Antecipar riscos e permitir ações rápidas que reduzam desfechos adversos.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-conteudo">
-                        <img src="img/dados.svg" alt="">
-                        <h1>Gestão de Dados</h1>
+                        <div class="header-card">
+                            <img src="img/dados.svg" alt="">
+                            <h1>Gestão de Dados</h1>  
+                        </div>
                         <p>Antecipar riscos e permitir ações rápidas que reduzam desfechos adversos.</p>
                     </div>
                 </div>
@@ -117,8 +130,10 @@
 
                 <div class="card">
                     <div class="card-conteudo">
-                        <img src="img/hospital.svg" alt="">
-                        <h1>Expansão no SUS</h1>
+                        <div class="header-card">
+                           <img src="img/hospital.svg" alt="">
+                            <h1>Expansão no SUS</h1>
+                        </div>
                         <p>Levar o sistema para outros hospitais e unidades da rede pública.</p>
                     </div>
                 </div>
@@ -126,8 +141,10 @@
 
                 <div class="card">
                     <div class="card-conteudo">
-                        <img src="img/estetoscopio.svg" alt="">
-                        <h1>Apoiar Decisão Clínica</h1>
+                        <div class="header-card">
+                           <img src="img/estetoscopio.svg" alt="">
+                            <h1>Apoiar Decisão Clínica</h1> 
+                        </div>
                         <p>Auxiliar profissionais da saúde com base em dados, sem substituir o julgamento humano.</p>
                     </div>
                 </div>
@@ -161,18 +178,20 @@
 
     <section class="container parceiros" id="parceiros">
 
-        <h1>Parceiros e instituições de apoio</h1>
-
-        <p>
-            O sophIA é fruto da colaboração entre instituições de ensino e pesquisa comprometidas com a inovação e o cuidado à saúde
-        </p>
-
-        <div class="parceiros_img">
-            <img src="img/cisam_colorido-scaled 1.png" alt="">
-            <img src="img/FENSG.png" alt="">
-            <img src="img/CNPq.png" alt="">
-            <img src="img/ppgec.png" alt="">
+        <div class="parceiros-texto"> 
+            <h1>Parceiros e instituições de apoio</h1>
+            <p> O sophIA é fruto da colaboração entre instituições de ensino e 
+                pesquisa comprometidas com a inovação e o cuidado à saúde.</p> 
         </div>
+       
+        <selection class="parceiros_img">
+            <ul id="image-list">
+                <li><img src="img/cisam_colorido-scaled 1.png" alt=""></li>
+                <li><img src="img/FENSG.png" alt=""></li>
+                <li><img src="img/CNPq.png" alt=""></li>
+                <li><img src="img/ppgec.png" alt=""></li>
+            </ul>
+        </selection>
 
     </section>
 
@@ -220,5 +239,6 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="carrossel.js"></script>
 </body>
 </html>
