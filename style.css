@@ -45,6 +45,8 @@ nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
+/*=========== HERO1 =============*/
+
 .hero1 {
     display: flex;
     flex-direction: row;
@@ -105,6 +107,8 @@ nav ul li a:hover::after {
     height: 631px;
 }
 
+/*=========== SOBRE =============*/
+
 .sobre {
     display: flex;
     flex-direction: row;
@@ -133,6 +137,8 @@ nav ul li a:hover::after {
     font-weight: 700;
     color: #424242;
 }
+
+/*=========== OBJETIVO =============*/
 
 .objetivo {
     height: 830px;
@@ -204,6 +210,8 @@ nav ul li a:hover::after {
     font-size: 1rem;
     color: #424242;
 }
+
+/*=========== FUNCIONALIDADES =============*/
 
 .funcionalidades {
     display: flex;
@@ -294,33 +302,67 @@ nav ul li a:hover::after {
     height: 558px;
 }
 
+/*=========== PARCEIROS =============*/
+
 .parceiros {
+    overflow: hidden; /* apenas para o carrossel */
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-top: 100px;
 }
 
+.parceiros-texto {
+    white-space: normal; /* permite quebra de linha no texto */
+}
+
 .parceiros h1{
     font-size: 2.5rem;
     font-weight: 700;
     color: #160B05;
+    white-space: normal;
 }
 
 .parceiros p {
     font-size: 1.5rem;
     font-weight: 500;
     color: #424242;
+    white-space: normal;
 }
 
 .parceiros_img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    height: auto;
     margin: 90px 0 159px 0;
     gap: 34px;
 }
+
+#image-list {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: max-content;
+  animation: slide 10s linear infinite;
+}
+
+#image-list {
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*=========== FOOTER =============*/
 
 .footer-container {
     width: 100%;
@@ -376,6 +418,8 @@ nav ul li a:hover::after {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
+/*=========== RESPONSIVIDADE 1000px =============*/
 
 @media (max-width: 1000px) {
 
