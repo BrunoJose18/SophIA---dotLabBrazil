@@ -379,8 +379,19 @@ nav ul li a:hover::after {
 
 @media (max-width: 1000px) {
 
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+    nav ul li a{
+        font-size: 1.1rem;
+    }
+
     .navbar {
-        padding-left: 100px;
+        padding-left: 150px;
+        gap: 1.8rem;
+        margin-right: 39px;
     }
 
     .hero1 {
@@ -441,15 +452,31 @@ nav ul li a:hover::after {
         font-size: 2rem;
     }
 
-    .funcionalidades-texto span, p {
+    .funcionalidades-texto span {
         font-size: 1.3rem;
     }
 
+    #conteudo-predicao,
+    #conteudo-dashboard {
+        font-size: 1.3rem;
+    }
     .parceiros h1 {
         font-size: 2rem;
     }
 
     .parceiros p {
         font-size: 1.3rem;
+    }
+
+    .parceiros_img {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 750px) {
+
+    header img {
+        width: 120px;
+        height: auto;
     }
 }

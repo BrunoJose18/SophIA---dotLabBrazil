@@ -1,3 +1,5 @@
+/* Lógica da troca de texto na seção de funcionalidades */
+
 document.addEventListener('DOMContentLoaded', () => {
     const triggers = document.querySelectorAll('.funcionalidades-span .trigger');
     const contentSections = document.querySelectorAll('.funcionalidades .funcionalidades-conteudo');
@@ -23,3 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         ativarConteudo(firstTrigger);
     }
 });
+
+/* Lógica do menu mobile */
+
+function MenuMobile(){
+    const menuMobile = document.querySelector("[data-menu='button'");
+    const ulMenu = document.querySelector("[data-menu='list'");
+    
+    menuMobile.addEventListener('click', () => {
+        ulMenu.classList.toggle('ativo');
+    });
+}
