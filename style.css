@@ -266,7 +266,8 @@ nav ul li a:hover::after {
     width: 31px;
     height: 10px;
     background-color: #160B05;
-    top: -8px;
+    top: -15px;
+    border-radius: 4px;
     left: 0;
     transform: scaleX(0);
     transition: transform 0.3s ease-out;
@@ -334,20 +335,24 @@ nav ul li a:hover::after {
 }
 
 .parceiros_img {
-    width: 200px;
+    /* Ocupa toda a largura disponível para que o carrossel seja full-width */
+    width: 100%;
     height: auto;
-    margin: 90px 0 159px 0;
+    margin: 40px 0; /* espaçamento mais contido entre seções */
     gap: 34px;
+    overflow: hidden; /* garante que apenas a faixa visível apareça */
 }
 
 #image-list {
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  width: max-content;
-  animation: slide 10s linear infinite;
+    margin: 30px 0;
+    display: flex;
+    /* alinhar os itens ao início para preencher a largura do container
+         e evitar espaços em branco laterais quando o container for centralizado */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    width: max-content;
+    animation: slide 10s linear infinite;
 }
 
 #image-list {

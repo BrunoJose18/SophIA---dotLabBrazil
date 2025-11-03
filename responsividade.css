@@ -74,7 +74,7 @@
     z-index: 300;
     cursor: pointer;
     position: relative;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   .menu-button:hover {
@@ -102,8 +102,8 @@
     background: #4d3333;
     padding: 35px;
     top: 145px;
-    right: 25px;
-    border-radius: 0 0 8px 8px;
+    left: 180px;
+    border-radius: 8px;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
     animation: slideDown 0.3s ease-out;
     text-align: start;
@@ -115,7 +115,7 @@
     content: "";
     position: absolute;
     top: -10px;
-    right: 50px;  /* Ajustado para alinhar a setinha com o botão */
+    right: 30px;  /* Ajustado para alinhar a setinha com o botão */
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -156,6 +156,11 @@
     width: 150px;
     height: auto;
   }
+
+  main {
+    margin-top: -30px;
+    margin-bottom: -120px;
+  }
   
   /*===== HERO1 =====*/
 
@@ -164,18 +169,37 @@
     text-align: start;
   }
 
+  .hero1-texto h2 {
+    font-size: 1.7rem;
+  }
+  .hero1-texto h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .hero1-texto p {
+    font-size: 0.9rem;
+  }
+  .hero1-texto p bold {
+    font-size: 0.9rem;
+  }
+  .hero1-texto button {
+    width: 160px;
+    font-size: 1rem;
+  }
+
   .hero1-img {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -120px;
+    margin-bottom: -120px;
   }
 
   .hero1-img img {
-    width: 400px;
+    width: 350px;
     height: auto;
-    margin: 0;
   }
 
   /*===== SOBRE =====*/
@@ -183,6 +207,18 @@
   .sobre {
     flex-direction: column;
     text-align: start;
+  }
+
+  .sobre-texto h2 {
+    font-size: 1.7rem;
+    margin-bottom: -10px;
+  }
+  .sobre-texto p {
+    font-size: 0.9rem;
+    margin-top: -20px;
+  }
+  .sobre-texto p bold {
+    font-size: 0.9rem;
   }
 
   .sobre-img {
@@ -201,9 +237,20 @@
   /*===== OBJETIVO =====*/
 
   .objetivo {
-    height: 95rem;
+    height: 78rem;
     flex-direction: column;
     text-align: start;
+  }
+
+  .objetivo-texto h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .objetivo-texto p {
+    font-size: 0.9rem;
+  }
+  .objetivo-texto p bold {
+    font-size: 0.9rem;
   }
 
   .objetivo-conteudo {
@@ -253,7 +300,7 @@
   }
 
   .card-conteudo p {
-    margin: 0;
+    margin-top: -10px;
     font-size: 0.9rem;
   }
 
@@ -262,7 +309,21 @@
   .funcionalidades {
     flex-direction: column;
     text-align: start;
-    margin-top: 150px;
+    margin-top: 120px;
+  }
+
+  .funcionalidades-texto h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #conteudo-predicao,
+  #conteudo-dashboard {
+    font-size: 1rem;
+    margin-top: -10px;
+  }
+  .funcionalidades-texto div span {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 
   .funcionalidades img {
@@ -278,6 +339,7 @@
     padding: 16px;
     white-space: normal;
     gap: 16px;
+    margin-top: -10px;
   }
 
   .parceiros > div.parceiros-texto {
@@ -288,13 +350,14 @@
   }
 
   .parceiros > div.parceiros-texto h1 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
     white-space: normal;
+    line-height: 2rem;
   }
 
   .parceiros > div.parceiros-texto p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     word-wrap: break-word;
     white-space: normal;
@@ -307,6 +370,15 @@
   #image-list {
     white-space: nowrap;
     margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Ajustes responsivos do carrossel: diminuir gap e acelerar animação
+     para evitar sensação de lentidão e garantir que o loop mostre todas as imagens. */
+  #image-list {
+    gap: 40px; /* reduz o espaçamento entre logos em telas pequenas */
+    animation: slide 6s linear infinite; /* mais rápido no mobile */
+    width: max-content; /* garante que a animação translateX(-50%) funcione corretamente */
   }
 
   .parceiros_img img {
@@ -349,7 +421,7 @@
   }
 
   .footer-listas h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 16px;
     text-align: start;
     width: 100%;
@@ -358,6 +430,7 @@
   .footer-colunas {
     align-items: start;
     text-align: start;
+    margin-bottom: 20px;
   }
 
   .footer-colunas ul {
@@ -369,6 +442,11 @@
 
   .footer-colunas ul li {
     margin: 0;
+  }
+
+  .footer-colunas.Mapa ul li a {
+    font-size: 0.9rem;
+    line-height: 1rem;
   }
 
   .footer-colunas.contatos ul li {
