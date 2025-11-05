@@ -1,5 +1,4 @@
 /* Lógica da troca de texto na seção de funcionalidades */
-
 document.addEventListener('DOMContentLoaded', () => {
     const triggers = document.querySelectorAll('.funcionalidades-span .trigger');
     const contentSections = document.querySelectorAll('.funcionalidades .funcionalidades-conteudo');
@@ -56,3 +55,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Verifica se a URL atual existe no servidor; se não existir redireciona para erro.html
+(function () {
+  try {
+    // Não tentar checar quando aberto via file:// (faz fetch falhar)
+    if (location.protocol === 'file:') return;
+
+    const pathname = location.pathname;
+    // Não rodar na página de erro, na raiz ou no index
+    if (pathname.endsWith('erro.html') || pathname.endsWith('index.html') || pathname === '/') return;
+
+    // Use um caminho absoluto para garantir que apontamos para o erro na raiz
+    const errorUrl = location.origin + '/erro.html';
+
+    // Tenta usar HEAD primeiro (menos custo). Alguns servidores não suportam HEAD — tratamos no catch.
+    fetch(location.href, { method: 'HEAD' })
+      .then(res => {
+        if (!res.ok) {
+          if (!location.href.endsWith('erro.html')) location.replace(errorUrl);
+        }
+      })
+      .catch(() => {
+        // Fallback para GET caso HEAD não seja suportado
+        fetch(location.href, { method: 'GET' })
+          .then(r => {
+            if (!r.ok) {
+              if (!location.href.endsWith('erro.html')) location.replace(errorUrl);
+            }
+          })
+          .catch(() => {
+            // Se houver erro de rede, não redirecionar automaticamente
+          });
+      });
+  } catch (e) {
+    // Se qualquer erro ocorrer, não bloquear a navegação
+    console.error('check-url error', e);
+  }
+})();

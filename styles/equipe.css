@@ -1,0 +1,133 @@
+.equipe {
+    position: relative;
+    top: 10px;
+    padding-bottom: 200px;
+}
+
+.sophia h1 {
+    font-size: 2rem;
+    color: #160B05;
+}
+
+.equipe p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.equipe-sophia,
+.pesq-parceiros {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.equipe-sophia li,
+.pesq-parceiros li {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding-bottom: 40px;
+    overflow: hidden; /* garante que a imagem seja recortada dentro do card */
+}
+
+.equipe-sophia li > img,
+.pesq-parceiros li > img {
+    width: 100%;
+    height: 420px; /* altura fixa para consistência */
+    object-fit: cover; /* mantém o corte central e preenche o espaço */
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.equipe-sophia li h2,
+.pesq-parceiros li h2 {
+    font-size: 1.25rem;
+    padding: 0 20px;
+    color: var(--cor-principal);
+    margin-top: 10px;
+}
+
+.equipe-sophia li p,
+.pesq-parceiros li p {
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    padding: 0px 20px;
+    margin-top: 5px;
+}
+
+.equipe-sophia li > div,
+.pesq-parceiros li > div {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.equipe-sophia li > div a,
+.pesq-parceiros li > div a {
+    background: #4A3638;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.equipe-sophia li > div a:hover,
+.pesq-parceiros li > div a:hover {
+    background: #4A3638;
+    transition: .2s;
+}
+
+.pesquisadores h1 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+    margin-top: 50px;
+}
+
+.pesquisadores p {
+    font-size: 1.25rem;
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 900px) {
+    .equipe-sophia,
+    .pesq-parceiros {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .equipe h1 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .equipe p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .equipe-sophia li h2,
+    .pesq-parceiros li h2 {
+        font-size: 1rem;
+    }
+    .equipe-sophia li p,
+    .pesq-parceiros li p {
+        font-size: .875rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .equipe-sophia,
+    .pesq-parceiros {
+        grid-template-columns: 1fr;
+    }
+}
