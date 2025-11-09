@@ -313,24 +313,45 @@
     text-align: start;
     margin-top: 120px;
   }
+  
+  .funcionalidades-texto {
+    align-items: center;    /* centraliza o conteúdo todo */
+    text-align: start;
+  }
 
   .funcionalidades-texto h1 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
   #conteudo-predicao,
   #conteudo-dashboard {
     font-size: 1rem;
     margin-top: -10px;
   }
+  
   .funcionalidades-texto div span {
     font-size: 0.9rem;
-    line-height: 1.5rem;
+    line-height: 1rem;
+    white-space: nowrap; 
   }
 
   .funcionalidades img {
     width: 300px;
     height: auto;
+  }
+
+  .funcionalidades-conteudo button {
+    width: 160px;
+    height: 45px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-left: 0px;         /* remove a margem fixa */
+    align-self: center;     /* centraliza o botão */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /*===== PARCERIAS =====*/

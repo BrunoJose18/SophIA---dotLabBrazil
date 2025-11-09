@@ -56,6 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//button dashboard
+document.getElementById("btnDashboard").addEventListener("click", function() {
+  window.open("http://dashsophia.dotlabbrazil.com.br/", "_blank");
+});
+
 // Verifica se a URL atual existe no servidor; se não existir redireciona para erro.html
 (function () {
   try {

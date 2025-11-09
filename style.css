@@ -304,6 +304,25 @@ nav ul li a:hover::after {
     height: 558px;
 }
 
+.funcionalidades-conteudo button {
+    width: 160px;
+    height: 55px;
+    background: linear-gradient(90deg, #160B05 0%, #4A3638 100%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 0px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.funcionalidades-conteudo button:hover {
+    background: #424242;
+}
+
 /*=========== PARCEIROS =============*/
 
 .parceiros {
@@ -341,6 +360,11 @@ nav ul li a:hover::after {
     margin: 40px 0; /* espaçamento mais contido entre seções */
     gap: 34px;
     overflow: hidden; /* garante que apenas a faixa visível apareça */
+}
+
+.aws-logo {
+    width: 160px;
+    height: auto;
 }
 
 #image-list {
