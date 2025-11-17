@@ -1,0 +1,402 @@
+* h1 {
+    line-height: 3.3rem;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-left: 300px;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li a{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #160B05;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    transform-origin: center; 
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/*=========== HERO1 =============*/
+
+.hero1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.hero1-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero1-texto h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4A3638;
+}
+
+.hero1-texto h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #160B05;
+}
+
+.hero1-texto p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.hero1-texto p bold{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #424242;
+}
+
+.hero1-texto button {
+    width: 260px;
+    height: 55px;
+    background: linear-gradient(90deg, #160B05 0%, #4A3638 100%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hero1-texto button:hover {
+    background: #424242;
+}
+
+.hero1-img {
+    width: 631px;
+    height: 631px;
+}
+
+/*=========== SOBRE =============*/
+
+.sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #160B05;
+}
+
+.sobre p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.sobre p bold{
+    font-weight: 700;
+    color: #424242;
+}
+
+/*=========== OBJETIVO =============*/
+
+.objetivo {
+    height: 560px;
+    background-color: #160B05;
+    margin-top: 125px;
+}
+
+.objetivo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.objetivo-texto > h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+
+.objetivo-texto p {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.objetivo-texto p bold{
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 359px;
+    max-width: 100%;
+    height: 302px;
+    background-color: #F1F1F1;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.card-conteudo {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    gap: 19px;
+}
+
+.card img {
+    width: 54px;
+    height: 54px;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #160B05;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #424242;
+}
+
+/*=========== ARTIGO =============*/
+
+.artigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.artigo span {
+    font-size: 1rem;
+    color: #424242;
+    position: relative;
+    padding: 50px 0px 0px 13px
+}
+
+.artigo span::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 54px;
+    background-color: #180D07;
+    bottom: 0px;
+    left: 0;
+}
+/*=========== FOOTER =============*/
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    background-color: #160B05;
+}
+
+.footer-container span {
+    display: flex;
+    padding: 90px 0 93px 0;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+
+.footer-listas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-listas h3 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.footer-listas ul li a{
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.footer-listas ul li a:hover {
+    cursor: pointer;
+    color: #424242;
+}
+
+.footer-img {
+    padding: 160px 0 50px 0;
+}
+
+.footer-colunas {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-colunas ul li {
+    display: flex;
+    margin: 7px 0
+}
+
+.contatos ul li a {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*=========== RESPONSIVIDADE 1000px =============*/
+
+@media (max-width: 1000px) {
+
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+    nav ul li a{
+        font-size: 1.1rem;
+    }
+
+    .navbar {
+        padding-left: 150px;
+        gap: 1.8rem;
+        margin-right: 39px;
+    }
+
+    .hero1 {
+        flex-direction: column;
+    }
+
+    .hero1-texto {
+        margin-top: 20px;
+    }
+
+    .hero1-texto h1 {
+        font-size: 2rem;
+    }
+
+    .hero1-texto p {
+    font-size: 1.3rem;
+    }
+
+    .hero1-texto p bold{
+    font-size: 1.3rem;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre h2 {
+        font-size: 2rem;
+    }
+
+    .sobre p, bold {
+        font-size: 1.3rem;
+    }
+
+    .objetivo {
+        height: 1130px;
+        padding-bottom: 50px;
+    }
+
+    .objetivo-texto > h1 {
+        font-size: 2rem;
+    }
+
+    .objetivo-texto p, bold {
+        font-size: 1.3rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .funcionalidades {
+        flex-direction: column;
+    }
+
+    .funcionalidades-texto h1 {
+        font-size: 2rem;
+    }
+
+    .funcionalidades-texto span {
+        font-size: 1.3rem;
+    }
+
+    #conteudo-predicao,
+    #conteudo-dashboard {
+        font-size: 1.3rem;
+    }
+    .parceiros h1 {
+        font-size: 2rem;
+    }
+
+    .parceiros p {
+        font-size: 1.3rem;
+    }
+
+    .parceiros_img {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 750px) {
+
+    header img {
+        width: 120px;
+        height: auto;
+    }
+}
