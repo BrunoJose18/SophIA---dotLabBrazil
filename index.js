@@ -56,6 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//button saiba mais
+document.getElementById("btnSaibamais").addEventListener("click", function() {
+  window.location.href = "sobre.html";
+});
+
 //button dashboard
 document.getElementById("btnDashboard").addEventListener("click", function() {
   window.open("http://dashsophia.dotlabbrazil.com.br/", "_blank");
