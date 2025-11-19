@@ -141,31 +141,31 @@ nav ul li a:hover::after {
 
 /*=========== OBJETIVO =============*/
 
-.objetivo {
+.proposito {
     height: 560px;
     background-color: #160B05;
     margin-top: 125px;
 }
 
-.objetivo-texto {
+.proposito-texto {
     display: flex;
     flex-direction: column;
     gap: 38px;
 }
 
-.objetivo-texto > h1 {
+.proposito-texto > h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #FFFFFF;
     padding-top: 100px;
 }
 
-.objetivo-texto p {
+.proposito-texto p {
     font-size: 1.5rem;
     color: #FFFFFF;
 }
 
-.objetivo-texto p bold{
+.proposito-texto p bold{
     font-weight: 700;
     color: #FFFFFF;
 }
@@ -305,7 +305,7 @@ nav ul li a:hover::after {
     }
 
     nav ul li a{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .navbar {
@@ -323,15 +323,15 @@ nav ul li a:hover::after {
     }
 
     .hero1-texto h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hero1-texto p {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     }
 
     .hero1-texto p bold{
-    font-size: 1.3rem;
+    font-size: 1rem;
     }
 
     .sobre {
@@ -339,29 +339,55 @@ nav ul li a:hover::after {
     }
 
     .sobre h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .sobre p, bold {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
-    .objetivo {
-        height: 1130px;
+    .proposito {
+        height: 750px;
         padding-bottom: 50px;
     }
 
-    .objetivo-texto > h1 {
-        font-size: 2rem;
+    .proposito-texto > h1 {
+        font-size: 1.5rem;
     }
 
-    .objetivo-texto p, bold {
-        font-size: 1.3rem;
+    .proposito-texto p, bold {
+        margin-top: -20px;
+        font-size: 1rem;
     }
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+
+    .artigo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .artigo span {
+        font-size: 0.7rem;
+        color: #424242;
+        position: relative;
+        margin-top: -20PX;
+        padding: 50px 0px 0px 13px;
+    }
+
+    .artigo span::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 40px;
+        background-color: #180D07;
+        bottom: 0px;
+        left: 0;
     }
 
     .funcionalidades {
