@@ -56,14 +56,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//button saiba mais
-document.getElementById("btnSaibamais").addEventListener("click", function() {
-  window.location.href = "sobre.html";
-});
+// Botões - envolvidos em DOMContentLoaded para garantir que o DOM está pronto
+document.addEventListener('DOMContentLoaded', function() {
+  const btnSaibamais = document.getElementById("btnSaibamais");
+  if (btnSaibamais) {
+    btnSaibamais.addEventListener("click", function() {
+      window.location.href = "sobre.html";
+    });
+  }
 
-//button dashboard
-document.getElementById("btnDashboard").addEventListener("click", function() {
-  window.open("http://dashsophia.dotlabbrazil.com.br/", "_blank");
+  const btnDashboard = document.getElementById("btnDashboard");
+  if (btnDashboard) {
+    btnDashboard.addEventListener("click", function() {
+      window.open("http://dashsophia.dotlabbrazil.com.br/", "_blank");
+    });
+  }
+
+  const btnArtigo = document.getElementById("btnArtigo");
+  if (btnArtigo) {
+    btnArtigo.addEventListener("click", function() {
+      window.open("https://ieeexplore.ieee.org/document/11048493/", "_blank");
+    });
+  }
 });
 
 // Verifica se a URL atual existe no servidor; se não existir redireciona para erro.html
